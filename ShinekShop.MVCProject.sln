@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36327.8 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShinekShop", "ShinekShop\ShinekShop.csproj", "{E9703913-3B65-4295-A9AD-59741DDFD55E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShinekShopWeb", "ShinekShop\ShinekShopWeb.csproj", "{E9703913-3B65-4295-A9AD-59741DDFD55E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShinekShopInfrastructure", "ShinekShopInfrastructure\ShinekShopInfrastructure.csproj", "{211D6617-823B-4587-B023-80F1430B98F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShinekShopApplication", "ShinekShopApplication\ShinekShopApplication.csproj", "{3898A09F-DA72-412E-ACD4-FCF7B85D18EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{E9703913-3B65-4295-A9AD-59741DDFD55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9703913-3B65-4295-A9AD-59741DDFD55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9703913-3B65-4295-A9AD-59741DDFD55E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{211D6617-823B-4587-B023-80F1430B98F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211D6617-823B-4587-B023-80F1430B98F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211D6617-823B-4587-B023-80F1430B98F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211D6617-823B-4587-B023-80F1430B98F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3898A09F-DA72-412E-ACD4-FCF7B85D18EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3898A09F-DA72-412E-ACD4-FCF7B85D18EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3898A09F-DA72-412E-ACD4-FCF7B85D18EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3898A09F-DA72-412E-ACD4-FCF7B85D18EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
