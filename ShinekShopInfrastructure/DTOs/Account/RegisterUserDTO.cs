@@ -12,6 +12,8 @@ namespace ShinekShopInfrastructure.DTOs.Account
         [Display(Name = "شماره موبایل")]
         [Required(ErrorMessage = "")]
         [MaxLength(11, ErrorMessage = "")]
-        public string PhoneNumber { get; set; }
+        public required string PhoneNumber { get; set; }
+
+        public string? ReturnUrl { get; set; }
     }
 }

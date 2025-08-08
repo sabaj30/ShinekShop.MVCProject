@@ -12,6 +12,6 @@ namespace ShinekShopInfrastructure.DTOs.Account
         [Display(Name = "کد فعالسازی")]
         [Required(ErrorMessage = "")]
         [MaxLength(5, ErrorMessage = "")]
-        public string ActivationCode { get; set; }
+        public required string ActivationCode { get; set; }
     }
 }
