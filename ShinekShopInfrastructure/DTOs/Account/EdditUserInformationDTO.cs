@@ -10,6 +10,7 @@ namespace ShinekShopInfrastructure.DTOs.Account
 {
     public class EdditUserInformationDTO
     {
+        public int UserId { get; set; }
         [Display(Name = "نام")]
         [Required(ErrorMessage = "")]
         public string FullName { get; set; } = string.Empty;

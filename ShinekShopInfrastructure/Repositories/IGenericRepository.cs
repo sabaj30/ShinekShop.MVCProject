@@ -9,12 +9,12 @@ namespace ShinekShopInfrastructure.Repositories
 {
     public interface IGenericRepository<TEntity> : IAsyncDisposable where TEntity : BaseEntity
     {
-        IEnumerable<TEntity> GetAll();
+        IQueryable<TEntity> GetAll();
         Task<TEntity> GetEntityById (int id);
         Task AddEntity(TEntity entity);
         Task AddRAngeEntity(List<TEntity> entity);
         void DeleteEntity(TEntity entity, int id);
-        void EditEntity(int id,TEntity entity);
+        void EditEntity(TEntity entity);
         Task SaveChangeRepo();
 
     }

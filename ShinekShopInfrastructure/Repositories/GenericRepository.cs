@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShinekShopInfrastructure.Context;
 using ShinekShopInfrastructure.Entities.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShinekShopInfrastructure.Repositories
 {
@@ -22,7 +17,7 @@ namespace ShinekShopInfrastructure.Repositories
         public async ValueTask DisposeAsync()
         {
             if (_applicationDbContext != null)
-            await _applicationDbContext.DisposeAsync();
+                await _applicationDbContext.DisposeAsync();
 
         }
 
@@ -49,7 +44,7 @@ namespace ShinekShopInfrastructure.Repositories
             _dbSet.Remove(entity);
         }
 
-        public void EditEntity(int id, TEntity entity)
+        public void EditEntity (TEntity entity)
         {
             entity.LastUpdateDate = DateTime.Now;
             _dbSet.Update(entity);
@@ -68,6 +63,11 @@ namespace ShinekShopInfrastructure.Repositories
         public async Task SaveChangeRepo()
         {
             await _applicationDbContext.SaveChangesAsync();
+        }
+
+        IQueryable<TEntity> IGenericRepository<TEntity>.GetAll()
+        {
+            throw new NotImplementedException();
         }
     }
 
